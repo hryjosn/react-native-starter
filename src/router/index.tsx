@@ -9,7 +9,7 @@ const Stack = createNativeStackNavigator()
 const Router = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Login" component={Login} />
       </Stack.Navigator>

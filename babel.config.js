@@ -7,6 +7,7 @@ module.exports = {
           root: ['./'],
           alias: {
             // This needs to be mirrored in tsconfig.json
+            '~': './src',
             '~/store': './src/store',
           },
         },

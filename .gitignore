@@ -145,8 +145,9 @@ package-lock.json
 #
 /ios/Pods/
 /ios/build/
+vendor
 # Android memory profiler files
 *.hprof
 
 # Temporary files created by Metro to check the health of the file watcher
-.metro-health-check*
+.metro-health-check*cd

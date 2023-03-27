@@ -7,7 +7,7 @@ import {
 
 import rootStore from '~/store'
 
-function Home(): JSX.Element {
+function Home({ navigation }): JSX.Element {
   const backgroundStyle = {
     height: '100%',
   }
@@ -20,11 +20,11 @@ const {
       <View style={{ flex: 1 }} />
       <Button
         onPress={() => {
-          console.log('clicked')
+          navigation.navigate('Login')
         }}
         color="#841584"
         accessibilityLabel="Learn more about this purple button"
-        title={text}
+        title={'Go to Login'}
       />
     </SafeAreaView>
   )

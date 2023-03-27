@@ -10,7 +10,7 @@ function Home(): JSX.Element {
 
   return (
     <SafeAreaView style={backgroundStyle}>
-        <Text>Login</Text>
+        <Text>This is Login Page</Text>
     </SafeAreaView>
   )
 }
