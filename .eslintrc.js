@@ -2,14 +2,11 @@ module.exports = {
   root: true,
   env: {
     es2021: true,
+    es6: true,
+
     jest: true,
   },
-  extends: [
-    'eslint:recommended',
-    '@react-native-community',
-    'prettier',
-    'standard',
-  ],
+  extends: ['eslint:recommended', 'prettier', 'standard'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -44,16 +41,18 @@ module.exports = {
     JSX: true,
   },
   rules: {
-    'prettier/prettier': [
-      'error',
-      {
-        endOfLine: 'auto',
-      },
-    ],
+    // 'prettier/prettier': 'error',
     indent: 0,
     camelcase: 0,
     'comma-dangle': 0,
+    'space-before-function-paren': 0,
+    'react/react-in-jsx-scope': 0,
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': ['error'],
+    'multiline-ternary': 0,
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
   },
-};
+}

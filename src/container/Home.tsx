@@ -1,14 +1,10 @@
-
-import { NavigationContainer } from '@react-navigation/native'
-import React from 'react'
 import {
   Button,
   SafeAreaView,
-  StyleSheet,
   View,
 } from 'react-native'
 
-function App(): JSX.Element {
+function Home(): JSX.Element {
   const backgroundStyle = {
     height: '100%',
   }
@@ -28,4 +24,4 @@ function App(): JSX.Element {
   )
 }
 
-export default App
+export default Home
