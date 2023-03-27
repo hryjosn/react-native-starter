@@ -1,16 +1,22 @@
 import {
   Button,
   SafeAreaView,
-  View,
+  Text,
+  View
 } from 'react-native'
+
+import rootStore from '~/store'
 
 function Home(): JSX.Element {
   const backgroundStyle = {
     height: '100%',
   }
-
+const {
+        homeStore: { page, text },
+    } = rootStore
   return (
     <SafeAreaView style={backgroundStyle}>
+        <Text>{text}</Text>
       <View style={{ flex: 1 }} />
       <Button
         onPress={() => {
@@ -18,7 +24,7 @@ function Home(): JSX.Element {
         }}
         color="#841584"
         accessibilityLabel="Learn more about this purple button"
-        title="click me"
+        title={text}
       />
     </SafeAreaView>
   )
