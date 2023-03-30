@@ -1,9 +1,5 @@
-import {
-  Button,
-  SafeAreaView,
-  Text,
-  View
-} from 'react-native'
+import { API_URL } from '@env'
+import { Button, SafeAreaView, Text, View } from 'react-native'
 
 import rootStore from '~/store'
 
@@ -11,12 +7,12 @@ function Home({ navigation }): JSX.Element {
   const backgroundStyle = {
     height: '100%',
   }
-const {
-        homeStore: { page, text },
-    } = rootStore
+  const {
+    homeStore: { page, text },
+  } = rootStore
   return (
     <SafeAreaView style={backgroundStyle}>
-        <Text>{text}</Text>
+      <Text>{API_URL}</Text>
       <View style={{ flex: 1 }} />
       <Button
         onPress={() => {

@@ -6,7 +6,12 @@ module.exports = {
 
     jest: true,
   },
-  extends: ['eslint:recommended', 'prettier', 'standard'],
+  extends: [
+    '@react-native-community',
+    'eslint:recommended',
+    'prettier',
+    'standard',
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {

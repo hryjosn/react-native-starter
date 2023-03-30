@@ -7,7 +7,7 @@
         "./src/*"
       ],
     },
-    "module": "esnext",
+    "module": "CommonJS",
     "target": "esnext",
     "allowJs": true,
     "skipLibCheck": true,
@@ -28,5 +28,6 @@
   "include": [
     "src",
   ],
+  "typeRoots": ["./src/types"],
   
 }
